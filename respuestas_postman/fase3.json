@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "58fbe375-1a80-4a65-a3b9-945a42b08feb",
+		"name": "BActiva-ejercicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://restcountries.eu/rest/v2/lang/es",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/lang/es",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"lang",
+						"es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/Jorge",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/v1/Jorge",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"Jorge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/v1/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/v1/test",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"test"
+					]
+				},
+				"description": "Url con variables"
+			},
+			"response": []
+		},
+		{
+			"name": "{{IP}}:{{port}}/v1/Alberto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}:{{port}}/v1/Alberto",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"v1",
+						"Alberto"
+					]
+				},
+				"description": "Url con variables"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

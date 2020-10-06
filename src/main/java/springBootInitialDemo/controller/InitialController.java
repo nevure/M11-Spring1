@@ -29,11 +29,14 @@ public class InitialController {
     
     /**
      * Mapeamos la raíz cuando recibe un parámetro
+     * si recibe como nombre "test" no ejecutará este método sino el que mapea este valor
+     * lo mismo para cualquier otra entrada par ala raíz.
+     * 
      * @param nom recibe un nombre por path en la url
      * @return
      */
     @GetMapping("/{nom}")
-    public String holaNom(@PathVariable(name="nom") String nom) {
+    public String holaNom(@PathVariable(name="nom") String nom) throws Exception{
     	return "Hello "+nom;
     }
     @GetMapping("/test")
