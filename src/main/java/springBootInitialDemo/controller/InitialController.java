@@ -18,6 +18,24 @@ public class InitialController {
         this.userService = userService;
     }
 
+    /**
+     * Mapeamos la raíz para mostrar un mensaje Hello World
+     * @return String
+     */
+    @GetMapping("")
+    public String hola() {
+    	return "HELLO WORLD";
+    }
+    
+    /**
+     * Mapeamos la raíz cuando recibe un parámetro
+     * @param nom recibe un nombre por path en la url
+     * @return
+     */
+    @GetMapping("/{nom}")
+    public String holaNom(@PathVariable(name="nom") String nom) {
+    	return "Hello "+nom;
+    }
     @GetMapping("/test")
     public String helloGradle() {
         return "Hello Gradle!";
